@@ -3,7 +3,6 @@ const cors = require("cors");
 const { connect } = require("mongoose");
 require("dotenv").config();
 const upload = require('express-fileupload')
-var favicon = require('serve-favicon')
 
 const userRoutes = require("./Routes/usersRoutes");
 const postsRoutes = require("./Routes/postsRoutes");
@@ -12,7 +11,7 @@ const { notFound, errorHandlers } = require('./middlewares/errorMiddlewares')
 const app = express();
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ credentials: true, origin: "https://riteblogapp-project-vmy7.vercel.app/"}));
+app.use(cors({ credentials: true, origin: "https://riteblogapp-project-vmy7.vercel.app"}));
 
 app.use(upload())
 app.use('/uploads', express.static(__dirname + '/uploads'))
