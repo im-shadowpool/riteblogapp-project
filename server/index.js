@@ -4,7 +4,7 @@ const { connect } = require("mongoose");
 require("dotenv").config();
 const upload = require('express-fileupload')
 var favicon = require('serve-favicon')
-
+const path = require('path');
 const userRoutes = require("./Routes/usersRoutes");
 const postsRoutes = require("./Routes/postsRoutes");
 const { notFound, errorHandlers } = require('./middlewares/errorMiddlewares')
