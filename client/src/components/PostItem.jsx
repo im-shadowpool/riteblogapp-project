@@ -16,7 +16,9 @@ const PostItem = ({
   return (
     <article className="post">
       <div className="post__thumbnail">
+       <Link to={`/posts/${postId}`}>
         <img src={`${process.env.REACT_APP_ASSETS}uploads/${thumbnail}`} alt={title} />
+       </Link>
       </div>
       <div className="post__content">
         <Link to={`/posts/${postId}`}>

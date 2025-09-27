@@ -681,8 +681,17 @@ textarea {
 
  padding: 1rem 0;
 }
-
 .author__social_icon{
   cursor:copy;
   font-size: 1.8rem;
 } 
+/* Image over effect */
+.post .post__thumbnail img{
+  scale: 1;
+  transition: scale 1.6s cubic-bezier(0.77, 0, 0.175, 1);
+  will-change: scale;
+}
+.post .post__thumbnail:hover img{
+  scale: 1.1;
+  transition: scale 1.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
