@@ -691,7 +691,13 @@ textarea {
   transition: scale 1.6s cubic-bezier(0.77, 0, 0.175, 1);
   will-change: scale;
 }
-.post .post__thumbnail:hover img{
+.post:hover .post__thumbnail img{
   scale: 1.1;
-  transition: scale 1.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.post:hover .post__content h3{
+  transition: color 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.post__content h3{
+  color: #6f6af8;
 }
